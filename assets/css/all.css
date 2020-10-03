@@ -105,6 +105,9 @@ span.dropdown-item:hover {
     display: flex;
     align-items: center;
   }
+  .top-center-div h5 {
+    margin: 0;
+  }
 }
 @media (max-width: 767.98px) {
   .navbar-brand {
