@@ -71,3 +71,50 @@ span.dropdown-item:hover {
 .fa-14x {
   font-size: 1.4rem;
 }
+.tab-show {
+  display: none;
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .tab-hide {
+    display: none;
+  }
+  .navbar {
+    padding: 0;
+  }
+  .navbar-expand-md {
+    flex-flow: wrap;
+  }
+  .tab-show {
+    display: inline;
+  }
+  .tab-navbar-top {
+    width: 100%;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .navbar-light .navbar-brand {
+    padding-left: 1rem;
+  }
+  .tab-navbar-top .navbar-nav {
+    flex: 1;
+  }
+  .tab-navbar-top .top-center-div {
+    margin: initial;
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 767.98px) {
+  .navbar-brand {
+    padding: 1rem 0 0;
+  }
+  .card-header.header-elements-inline {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .card-title {
+    padding-bottom: 10px;
+  }
+}
