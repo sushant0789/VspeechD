@@ -1,0 +1,73 @@
+.top-center-div {
+  margin: auto;
+}
+.top-center-div h4 {
+  margin: 0;
+}
+.navbar-brand {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.navbar-brand img {
+  height: 1.8rem;
+}
+span.dropdown-item {
+  cursor: default;
+}
+span.dropdown-item:hover {
+  background: none;
+}
+.info-box {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.25rem 0.5rem;
+}
+.info-box h2 {
+  margin: 0 0 0.3rem;
+}
+.info-box i {
+  color: #2196f3;
+}
+.info-link {
+  padding: 0.7rem 1.25rem;
+  background-color: #edf0f2;
+  color: #2196f3;
+  font-size: 1rem;
+}
+.info-icon {
+  background-color: #edf0f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.table.text-nowrap th {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+.table.text-nowrap td {
+  font-size: 0.9rem;
+}
+.badge.badge-pill {
+  font-size: 0.9rem;
+  padding: 0.5rem 0.7rem;
+}
+.icon-shield-check {
+  font-size: 1.2rem;
+}
+.icon-pencil5 {
+  color: #333;
+}
+.icon-comments,
+.icon-list {
+  cursor: pointer;
+}
+.file-name {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+.fa-14x {
+  font-size: 1.4rem;
+}
