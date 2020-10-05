@@ -74,6 +74,67 @@ span.dropdown-item:hover {
 .tab-show {
   display: none;
 }
+.agent-top-right {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.agent-top-right div {
+  display: flex;
+  flex-direction: row;
+}
+.transcript-flexbox {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 2.5rem;
+}
+.speaker-box {
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  border-right-width: 0;
+  box-shadow: -3px 0 0 0 #2196f3 inset;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 0 0 0 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.arrow-left {
+  position: relative;
+}
+.arrow-left:after {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-right-color: #2196f3;
+  border-width: 10px;
+  margin-top: -10px;
+}
+.media-list li {
+  align-items: center;
+}
+.my-custom-scrollbar {
+  position: relative;
+  width: 100%;
+  overflow: auto;
+  padding: 0 1.5rem 0 0;
+}
+.my-custom-scrollbar-primary {
+  height: 600px;
+}
+.my-custom-scrollbar-secondary {
+  height: 100px;
+}
 @media (min-width: 768px) and (max-width: 1199.98px) {
   .tab-hide {
     display: none;
