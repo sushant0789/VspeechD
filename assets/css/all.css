@@ -161,6 +161,10 @@ h5.analytics-title {
   border-radius: 3px;
   border: 1px solid #ddd;
 }
+.select-search {
+  display: block;
+  min-width: 180px;
+}
 @media (min-width: 768px) and (max-width: 1199.98px) {
   .tab-hide {
     display: none;
