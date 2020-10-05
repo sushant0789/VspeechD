@@ -53,7 +53,9 @@
     <!-- /core JS files -->
 
     <!-- Theme JS files -->
+    <script src="assets/js/plugins/forms/selects/select2.min.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/demo_pages/sidebar_components.js"></script>
     <!-- /theme JS files -->
   </head>
 
@@ -383,6 +385,63 @@
                       <h6 class="font-weight-bold mb-0">489</h6>
                     </td>
                   </tr>
+                  <tr>
+                    <td>
+                      <a href="agent.html" class="font-weight-bold"
+                        >Mega Sale</a
+                      >
+                    </td>
+                    <td><span class="text-muted">Recurring</span></td>
+                    <td>
+                      <span class="font-weight-bold"
+                        ><span class="badge bg-danger">Ended</span></span
+                      >
+                    </td>
+                    <td>
+                      <span>14 Dec 17 01:45pm</span>
+                    </td>
+                    <td>
+                      <h6 class="font-weight-bold mb-0">489</h6>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="agent.html" class="font-weight-bold"
+                        >Mega Sale</a
+                      >
+                    </td>
+                    <td><span class="text-muted">Recurring</span></td>
+                    <td>
+                      <span class="font-weight-bold"
+                        ><span class="badge bg-danger">Ended</span></span
+                      >
+                    </td>
+                    <td>
+                      <span>14 Dec 17 01:45pm</span>
+                    </td>
+                    <td>
+                      <h6 class="font-weight-bold mb-0">489</h6>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="agent.html" class="font-weight-bold"
+                        >Weekend Sale</a
+                      >
+                    </td>
+                    <td><span class="text-muted">Recurring</span></td>
+                    <td>
+                      <span class="font-weight-bold"
+                        ><span class="badge bg-blue">Running</span></span
+                      >
+                    </td>
+                    <td>
+                      <span>14 Dec 17 01:45pm</span>
+                    </td>
+                    <td>
+                      <h6 class="font-weight-bold mb-0">1,209</h6>
+                    </td>
+                  </tr>
                 </tbody>
               </table>
             </div>
@@ -438,7 +497,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Create Campaign</h5>
             <button
               type="button"
               class="close"
@@ -460,7 +519,10 @@
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label">Type </label>
                 <div class="col-lg-9">
-                  <select name="select" class="form-control">
+                  <select
+                    name="select"
+                    class="form-control form-control-select2"
+                  >
                     <option value="opt1">Basic select</option>
                     <option value="opt2">Option 2</option>
                     <option value="opt3">Option 3</option>
@@ -476,7 +538,10 @@
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label">Status </label>
                 <div class="col-lg-9">
-                  <select name="select" class="form-control">
+                  <select
+                    name="select"
+                    class="form-control form-control-select2"
+                  >
                     <option value="opt1">Running</option>
                     <option value="opt2">Ended</option>
                     <option value="opt3">Planned</option>
