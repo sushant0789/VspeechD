@@ -53,11 +53,7 @@
     <!-- /core JS files -->
 
     <!-- Theme JS files -->
-    <script src="assets/js/plugins/forms/selects/select2.min.js"></script>
-    <script src="assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
-
     <script src="assets/js/app.js"></script>
-    <script src="assets/js/demo_pages/sidebar_components.js"></script>
     <!-- /theme JS files -->
   </head>
 
@@ -293,130 +289,102 @@
 
           <div class="card">
             <div class="card-header header-elements-inline">
+              <h5 class="card-title">List of Campaigns</h5>
               <div class="header-elements">
-                <div class="btn-group">
-                  <form action="#">
-                    <div class="select-search">
-                      <select
-                        class="form-control form-control-select2"
-                        data-fouc
+                <button
+                  type="button"
+                  class="btn bg-teal font-weight-semibold mr-2"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                  data-whatever="@mdo"
+                >
+                  Create a Campaign
+                </button>
+                <form action="#" class="mr-2">
+                  <div class="form-group-feedback form-group-feedback-right">
+                    <input
+                      type="search"
+                      class="form-control"
+                      placeholder="Search"
+                    />
+                    <div class="form-control-feedback">
+                      <i class="icon-search4 font-size-base text-muted"></i>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table text-nowrap text-center">
+                <thead>
+                  <tr>
+                    <th>Campaign Name</th>
+                    <th>Type</th>
+                    <th>Status</th>
+                    <th>Start Date</th>
+                    <th>Delivered</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <a href="agent.html" class="font-weight-bold"
+                        >Weekend Sale</a
                       >
-                        <option value="all" selected>All Transcription</option>
-                        <option value="tags">Tags</option>
-                        <option value="agentID">Agent ID</option>
-                        <option value="competitor">Competitor</option>
-                      </select>
-                    </div>
-                  </form>
-                  <form action="#">
-                    <div class="d-flex">
-                      <input
-                        type="search"
-                        class="form-control"
-                        placeholder="Enter Keywords"
-                      />
-                      <button type="submit" class="btn btn-primary">
-                        Search
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-header header-elements-inline">
-              <h5 class="card-title">Search Results</h5>
-            </div>
-
-            <div class="card-body">
-              <p class="mb-3">
-                Sidebar - vertical area that displays onscreen and presents
-                widget components and website navigation menu in a text-based
-                hierarchical form. All sidebars are css-driven - just add one of
-                css classes to the <code>body</code> tag and/or
-                <code>.sidebar</code> container, and sidebar will change its
-                width and color. No js, css only. Although sidebar type is based
-                on css, buttons do their job with JS - they switch necessary
-                classes in <code>&lt;body></code> tag. Below you'll find
-                summarized tables with all available <code>button</code> and
-                <code>sidebar</code> container classes. By default, the template
-                includes 6 different sidebar types and combinations:
-              </p>
-
-              <div class="mb-3">
-                <h6 class="font-weight-semibold">1. Default sidebar</h6>
-                <p>
-                  Default template sidebar has <code>270px</code> (~16.88rem)
-                  width, aligned to the left (to the right in RTL version) and
-                  has dark blue background color. All navigation levels are
-                  based on accordion <strong>or</strong> collapsible
-                  functionality, open on click. Supports 2 versions: static and
-                  fixed. Fixed version can be used with native or custom
-                  scrollbars.
-                </p>
-              </div>
-
-              <div class="mb-3">
-                <h6 class="font-weight-semibold">2. Mini sidebar</h6>
-                <p>
-                  Mini sidebar has <code>56px</code> width, which is calculated
-                  dynamically. No text in parent level of menu items, aligned to
-                  the left (to the right in RTL version) and has dark blue
-                  background color. Second navigation level opens on parent
-                  level hover, absolute positioned, other children levels are
-                  based on accordion or collapsible functionality, open on
-                  click. It is <strong>required</strong> to add
-                  <code>.sidebar-xs</code> class to the
-                  <code>&lt;body></code> tag. This class is responsible for
-                  sidebar width and main navigation. By default all components
-                  except main navigation are hidden in mini sidebar. Can be used
-                  with main sidebar only.
-                </p>
-              </div>
-
-              <div class="mb-3">
-                <h6 class="font-weight-semibold">3. Secondary sidebar</h6>
-                <p>
-                  Main sidebar has <code>270px</code> width or
-                  <code>56px</code> (if <code>.sidebar-xs</code> class added).
-                  Secondary sidebar has fixed width of <code>270px</code>, which
-                  is similar to default and right sidebars, so different sidebar
-                  components can be placed to all sidebar types. Main and
-                  secondary sidebars can contain any content - menu, navigation,
-                  buttons, lists, tabs etc. Only main sidebar is collapsible.
-                </p>
-              </div>
-
-              <div class="mb-3">
-                <h6 class="font-weight-semibold">4. Right sidebar</h6>
-                <p>
-                  Right sidebar includes additional sidebar displayed on the
-                  right (left in RTL direction) side. It has a static position,
-                  appears as an additional component with 100% height and pushes
-                  content left/right. There are 2 different ways of displaying
-                  alternative sidebar: first - when it collapses main sidebar
-                  from default to mini width and second - when it hides the main
-                  sidebar. For these actions are responsible 2 different buttons
-                  -
-                  <code>.sidebar-right-main-toggle</code> and
-                  <code>.sidebar-right-main-hide</code>.
-                </p>
-              </div>
-
-              <div class="mb-3">
-                <h6 class="font-weight-semibold">
-                  5. Right/Secondary sidebars
-                </h6>
-                <p>
-                  Secondary and Right sidebars can be used together, so
-                  basically it is a 4 column layout. When right sidebar is
-                  shown, additional options are available: hide main sidebar,
-                  hide secondary sidebar or collapse main sidebar width. Since
-                  right sidebar is hidden by default, you can display all 4
-                  sidebars at once by manipulating classes. Options are
-                  accessible via proper button and/or body classes.
-                </p>
-              </div>
+                    </td>
+                    <td><span class="text-muted">Recurring</span></td>
+                    <td>
+                      <span class="font-weight-bold"
+                        ><span class="badge bg-blue">Running</span></span
+                      >
+                    </td>
+                    <td>
+                      <span>14 Dec 17 01:45pm</span>
+                    </td>
+                    <td>
+                      <h6 class="font-weight-bold mb-0">5,489</h6>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="agent.html" class="font-weight-bold"
+                        >Weekend Sale</a
+                      >
+                    </td>
+                    <td><span class="text-muted">Recurring</span></td>
+                    <td>
+                      <span class="font-weight-bold"
+                        ><span class="badge bg-blue">Running</span></span
+                      >
+                    </td>
+                    <td>
+                      <span>14 Dec 17 01:45pm</span>
+                    </td>
+                    <td>
+                      <h6 class="font-weight-bold mb-0">1,209</h6>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="agent.html" class="font-weight-bold"
+                        >Mega Sale</a
+                      >
+                    </td>
+                    <td><span class="text-muted">Recurring</span></td>
+                    <td>
+                      <span class="font-weight-bold"
+                        ><span class="badge bg-danger">Ended</span></span
+                      >
+                    </td>
+                    <td>
+                      <span>14 Dec 17 01:45pm</span>
+                    </td>
+                    <td>
+                      <h6 class="font-weight-bold mb-0">489</h6>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
 
@@ -457,5 +425,91 @@
       </div>
     </div>
     <!-- /footer -->
+
+    <!-- Comment Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="#">
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label">Compaign name</label>
+                <div class="col-lg-9">
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label">Type </label>
+                <div class="col-lg-9">
+                  <select name="select" class="form-control">
+                    <option value="opt1">Basic select</option>
+                    <option value="opt2">Option 2</option>
+                    <option value="opt3">Option 3</option>
+                    <option value="opt4">Option 4</option>
+                    <option value="opt5">Option 5</option>
+                    <option value="opt6">Option 6</option>
+                    <option value="opt7">Option 7</option>
+                    <option value="opt8">Option 8</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label">Status </label>
+                <div class="col-lg-9">
+                  <select name="select" class="form-control">
+                    <option value="opt1">Running</option>
+                    <option value="opt2">Ended</option>
+                    <option value="opt3">Planned</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label">Message </label>
+                <div class="col-lg-9">
+                  <textarea
+                    rows="5"
+                    cols="5"
+                    class="form-control"
+                    placeholder="Default textarea"
+                  ></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Comment Modal -->
   </body>
 </html>
