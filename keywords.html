@@ -89,9 +89,9 @@
           </li>
 
           <li class="nav-item">
-            <a href="assessment.html" class="navbar-nav-link">
+            <a href="conversions.html" class="navbar-nav-link">
               <i class="icon-list mr-2"></i>
-              Assessment
+              Conversions
             </a>
           </li>
 
@@ -163,9 +163,7 @@
               <a href="#" class="dropdown-item"
                 ><i class="icon-user-plus"></i> My profile</a
               >
-              <a href="#" class="dropdown-item"
-                ><i class="icon-coins"></i> My balance</a
-              >
+
               <a href="#" class="dropdown-item"
                 ><i class="icon-comment-discussion"></i> Messages
                 <span class="badge badge-pill bg-blue ml-auto">58</span></a
@@ -195,7 +193,7 @@
               >
               <div class="dropdown-divider"></div>
               <a href="index.html" class="dropdown-item"> Dashboard </a>
-              <a href="assessment.html" class="dropdown-item">Assessment </a>
+              <a href="conversions.html" class="dropdown-item">Conversions</a>
               <a href="leaderboard.html" class="dropdown-item">LeaderBoard</a>
               <div class="dropdown-divider"></div>
               <span class="dropdown-item">
@@ -236,9 +234,9 @@
           </li>
 
           <li class="nav-item">
-            <a href="assessment.html" class="navbar-nav-link">
+            <a href="conversions.html" class="navbar-nav-link">
               <i class="icon-list mr-2"></i>
-              Assessment
+              Conversions
             </a>
           </li>
 
@@ -290,7 +288,7 @@
           <!-- Dashboard content -->
 
           <div class="card">
-            <div class="card-header d-flex d-inline-block">
+            <div class="card-header header-elements-inline">
               <h5 class="card-title mr-2">Campaign :</h5>
               <div class="col-md-3">
                 <select name="select" class="form-control form-control-select2">
@@ -303,6 +301,12 @@
                   <option value="opt7">Option 7</option>
                   <option value="opt8">Option 8</option>
                 </select>
+              </div>
+              <div class="header-elements">
+                <span class="font-size-lg"
+                  ><i class="icon-plus-circle2 text-teal mr-1"></i> New
+                  Keyword/Phrase</span
+                >
               </div>
             </div>
             <div class="card-body">
@@ -627,6 +631,46 @@
                   </table>
                 </div>
               </div>
+              <div class="col-lg-12">
+                <div class="row">
+                  <div class="header-elements-inline mt-3">
+                    <h5 class="card-title mr-2">Keyword or Phrase Common</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label>Text input</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label>Match Type </label>
+                    <select
+                      name="select"
+                      class="form-control form-control-select2"
+                    >
+                      <option value="opt1">Exact Match</option>
+                      <option value="opt2">Any Word</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label>Speaker </label>
+                    <select
+                      name="select"
+                      class="form-control form-control-select2"
+                    >
+                      <option value="opt1">Both</option>
+                      <option value="opt2">Agent</option>
+                      <option value="opt3">Customer</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -667,97 +711,5 @@
       </div>
     </div>
     <!-- /footer -->
-
-    <!-- Comment Modal -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Create Campaign</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form action="#">
-              <div class="form-group row">
-                <label class="col-lg-3 col-form-label">Compaign name</label>
-                <div class="col-lg-9">
-                  <input type="text" class="form-control" />
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <label class="col-lg-3 col-form-label">Type </label>
-                <div class="col-lg-9">
-                  <select
-                    name="select"
-                    class="form-control form-control-select2"
-                  >
-                    <option value="opt1">Basic select</option>
-                    <option value="opt2">Option 2</option>
-                    <option value="opt3">Option 3</option>
-                    <option value="opt4">Option 4</option>
-                    <option value="opt5">Option 5</option>
-                    <option value="opt6">Option 6</option>
-                    <option value="opt7">Option 7</option>
-                    <option value="opt8">Option 8</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <label class="col-lg-3 col-form-label">Status </label>
-                <div class="col-lg-9">
-                  <select
-                    name="select"
-                    class="form-control form-control-select2"
-                  >
-                    <option value="opt1">Running</option>
-                    <option value="opt2">Ended</option>
-                    <option value="opt3">Planned</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <label class="col-lg-3 col-form-label">Message </label>
-                <div class="col-lg-9">
-                  <textarea
-                    rows="5"
-                    cols="5"
-                    class="form-control"
-                    placeholder="Default textarea"
-                  ></textarea>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Submit</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /Comment Modal -->
   </body>
 </html>
