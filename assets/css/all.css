@@ -172,6 +172,18 @@ h5.analytics-title {
   align-items: center;
   justify-content: center;
 }
+.btn-badge-sm {
+  padding: 0.015rem 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1.6667;
+  border-radius: 0.125rem;
+}
+.scrollable-div {
+  height: 320px;
+  overflow: auto;
+  padding: 1.25rem;
+  flex: 1 1 auto;
+}
 @media (min-width: 768px) and (max-width: 1199.98px) {
   .tab-hide {
     display: none;
