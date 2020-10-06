@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Vspeech.ai - Dashboard</title>
+
+    <!-- Global stylesheets -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/icons/icomoon/styles.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/icons/fontawesome/styles.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/bootstrap_limitless.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="assets/css/layout.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="assets/css/components.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="assets/css/colors.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/all-min.css" rel="stylesheet" type="text/css" />
+    <!-- /global stylesheets -->
+
+    <!-- Core JS files -->
+    <script src="assets/js/main/jquery.min.js"></script>
+    <script src="assets/js/main/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/plugins/loaders/blockui.min.js"></script>
+    <script src="assets/js/plugins/ui/slinky.min.js"></script>
+    <!-- /core JS files -->
+
+    <!-- Theme JS files -->
+    <script src="assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/demo_pages/sidebar_components.js"></script>
+    <!-- /theme JS files -->
+  </head>
+
+  <body class="sidebar-xs">
+    <!-- Main navbar -->
+    <div class="navbar navbar-expand-md navbar-light">
+      <div class="navbar-brand wmin-0">
+        <a href="index.html" class="d-inline-block">
+          <img src="assets/images/logo.png" alt="" />
+        </a>
+      </div>
+      <div class="text-center d-md-none w-100">
+        <button
+          type="button"
+          class="navbar-toggler dropdown-toggle"
+          data-toggle="collapse"
+          data-target="#navbar-navigation"
+        >
+          <i class="icon-unfold mr-2"></i>
+          Navigation
+        </button>
+      </div>
+
+      <div class="navbar-collapse collapse" id="navbar-navigation">
+        <ul class="navbar-nav tab-hide">
+          <li class="nav-item">
+            <a href="index.html" class="navbar-nav-link">
+              <i class="icon-home4 mr-2"></i>
+              Dashboard
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="assessment.html" class="navbar-nav-link">
+              <i class="icon-list mr-2"></i>
+              Assessment
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="leaderboard.html" class="navbar-nav-link active">
+              <i class="icon-user mr-2"></i>
+              LeaderBoard
+            </a>
+          </li>
+        </ul>
+        <div class="top-center-div tab-hide">
+          <h4>Vspeech Voice Analytics Dashboard</h4>
+        </div>
+        <ul class="navbar-nav ml-md-auto">
+          <li class="nav-item dropdown">
+            <a
+              href="#"
+              class="navbar-nav-link dropdown-toggle"
+              data-toggle="dropdown"
+            >
+              <img
+                src="assets/images/lang/gb.png"
+                class="img-flag mr-2"
+                alt=""
+              />
+              English
+            </a>
+
+            <div class="dropdown-menu dropdown-menu-right">
+              <a href="#" class="dropdown-item english"
+                ><img src="assets/images/lang/gb.png" class="img-flag" alt="" />
+                English</a
+              >
+              <a href="#" class="dropdown-item ukrainian"
+                ><img src="assets/images/lang/ua.png" class="img-flag" alt="" />
+                Українська</a
+              >
+              <a href="#" class="dropdown-item deutsch"
+                ><img src="assets/images/lang/de.png" class="img-flag" alt="" />
+                Deutsch</a
+              >
+              <a href="#" class="dropdown-item espana"
+                ><img src="assets/images/lang/es.png" class="img-flag" alt="" />
+                España</a
+              >
+              <a href="#" class="dropdown-item russian"
+                ><img src="assets/images/lang/ru.png" class="img-flag" alt="" />
+                Русский</a
+              >
+            </div>
+          </li>
+
+          <li class="nav-item dropdown dropdown-user">
+            <a
+              href="#"
+              class="navbar-nav-link d-flex align-items-center dropdown-toggle"
+              data-toggle="dropdown"
+            >
+              <img
+                src="assets/images/placeholders/placeholder.jpg"
+                class="rounded-circle mr-2"
+                height="34"
+                alt=""
+              />
+              <span>Victoria</span>
+            </a>
+
+            <div class="dropdown-menu dropdown-menu-right">
+              <a href="#" class="dropdown-item"
+                ><i class="icon-user-plus"></i> My profile</a
+              >
+              <a href="#" class="dropdown-item"
+                ><i class="icon-coins"></i> My balance</a
+              >
+              <a href="#" class="dropdown-item"
+                ><i class="icon-comment-discussion"></i> Messages
+                <span class="badge badge-pill bg-blue ml-auto">58</span></a
+              >
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item"
+                ><i class="icon-cog5"></i> Account settings</a
+              >
+              <a href="#" class="dropdown-item"
+                ><i class="icon-switch2"></i> Logout</a
+              >
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              href="#"
+              class="navbar-nav-link dropdown-toggle"
+              data-toggle="dropdown"
+            >
+              <i class="icon-cog3"></i>
+              <span class="d-md-none ml-2">Settings</span>
+            </a>
+
+            <div class="dropdown-menu dropdown-menu-right">
+              <span class="dropdown-item">
+                <i class="icon-make-group"></i> Navigation</span
+              >
+              <div class="dropdown-divider"></div>
+              <a href="index.html" class="dropdown-item"> Dashboard </a>
+              <a href="assessment.html" class="dropdown-item">Assessment </a>
+              <a href="leaderboard.html" class="dropdown-item">LeaderBoard</a>
+              <div class="dropdown-divider"></div>
+              <span class="dropdown-item">
+                <i class="icon-stats-bars"></i> Insights</span
+              >
+              <div class="dropdown-divider"></div>
+              <a href="search.html" class="dropdown-item"> Search </a>
+              <a href="reports.html" class="dropdown-item"> Reports </a>
+              <div class="dropdown-divider"></div>
+              <span class="dropdown-item">
+                <i class="icon-people"></i> Engagement Setup</span
+              >
+              <div class="dropdown-divider"></div>
+              <a href="campaign.html" class="dropdown-item"> Campaign </a>
+              <a href="#" class="dropdown-item"> Groups </a>
+              <a href="#" class="dropdown-item"> Keywords </a>
+              <a href="#" class="dropdown-item"> Lexicon </a>
+              <a href="#" class="dropdown-item"> Redactions </a>
+              <a href="#" class="dropdown-item"> Stop Words </a>
+              <a href="#" class="dropdown-item"> Sentiment </a>
+              <div class="dropdown-divider"></div>
+              <span class="dropdown-item">
+                <i class="icon-user"></i> Supervisor</span
+              >
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item"> Comments</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-show tab-navbar-top">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html" class="navbar-nav-link">
+              <i class="icon-home4 mr-2"></i>
+              Dashboard
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="assessment.html" class="navbar-nav-link">
+              <i class="icon-list mr-2"></i>
+              Assessment
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="leaderboard.html" class="navbar-nav-link active">
+              <i class="icon-user mr-2"></i>
+              LeaderBoard
+            </a>
+          </li>
+        </ul>
+        <div class="top-center-div">
+          <h5>Vspeech Voice Analytics Dashboard</h5>
+        </div>
+      </div>
+    </div>
+    <!-- /Main navbar -->
+
+    <!-- Page header -->
+    <div class="page-header">
+      <div class="page-header-content header-elements-md-inline">
+        <div class="page-title d-flex">
+          <h4>
+            <i class="icon-arrow-left52 mr-2"></i>
+            <span class="font-weight-semibold">Group and group score</span>
+          </h4>
+          <a href="#" class="header-elements-toggle text-default d-md-none"
+            ><i class="icon-more"></i
+          ></a>
+        </div>
+
+        <div class="header-elements d-none py-0 mb-3 mb-md-0">
+          <div class="breadcrumb">
+            <a href="index.html" class="breadcrumb-item"
+              ><i class="icon-home2 mr-2"></i> Home</a
+            >
+            <span class="breadcrumb-item active">Group and group score</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /page header -->
+
+    <!-- Page content -->
+    <div class="page-content pt-0">
+      <!-- Main content -->
+      <div class="content-wrapper">
+        <!-- Content area -->
+        <div class="content">
+          <!-- Dashboard content -->
+
+          <div class="card">
+            <div class="card-header header-elements-inline">
+              <h5 class="card-title">Campaign</h5>
+              <div class="col-md-3">
+                <select name="select" class="form-control form-control-select2">
+                  <option value="opt1">Basic select</option>
+                  <option value="opt2">Option 2</option>
+                  <option value="opt3">Option 3</option>
+                  <option value="opt4">Option 4</option>
+                  <option value="opt5">Option 5</option>
+                  <option value="opt6">Option 6</option>
+                  <option value="opt7">Option 7</option>
+                  <option value="opt8">Option 8</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-lg-4">
+                <!-- group -->
+                <div class="card">
+                  <div class="card-header header-elements-inline">
+                    <h6 class="card-title">Setup a group</h6>
+                    <div class="header-elements">
+                      <span
+                        ><i class="icon-history text-warning mr-2"></i> Jul 7,
+                        10:30</span
+                      >
+                      <button
+                        type="button"
+                        class="btn btn-sm bg-teal ml-3"
+                        data-toggle="modal"
+                        data-target="#exampleModal"
+                        data-whatever="@mdo"
+                      >
+                        Create
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Tabs -->
+                  <ul
+                    class="nav nav-tabs nav-tabs-solid nav-justified bg-indigo-400 border-x-0 border-bottom-0 border-top-indigo-300 mb-0"
+                  >
+                    <li class="nav-item">
+                      <a
+                        href="#group"
+                        class="nav-link font-weight-semibold font-size-lg text-uppercase active"
+                        data-toggle="tab"
+                      >
+                        Group
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- /tabs -->
+
+                  <!-- Tabs content -->
+                  <div class="tab-content card-body">
+                    <div class="tab-pane active fade show" id="group">
+                      <ul class="media-list">
+                        <li class="media">
+                          <div class="mr-3">
+                            <span
+                              class="badge bg-danger-400 badge-pill border-2 border-white"
+                              >8</span
+                            >
+                          </div>
+
+                          <div class="media-body">
+                            <div class="d-flex justify-content-between">
+                              <a href="#">James Alexander</a>
+                              <span class="font-size-sm text-muted"
+                                ><i class="icon-pencil5"></i
+                              ></span>
+                            </div>
+
+                            The constitutionally inventoried precariously...
+                          </div>
+                        </li>
+
+                        <li class="media">
+                          <div class="mr-3 position-relative">
+                            <span
+                              class="badge bg-danger-400 badge-pill border-2 border-white"
+                              >6</span
+                            >
+                          </div>
+
+                          <div class="media-body">
+                            <div class="d-flex justify-content-between">
+                              <a href="#">Margo Baker</a>
+                              <span class="font-size-sm text-muted"
+                                ><i class="icon-pencil5"></i
+                              ></span>
+                            </div>
+
+                            Pinched a well more moral chose goodness...
+                          </div>
+                        </li>
+
+                        <li class="media">
+                          <div class="mr-3">
+                            <span
+                              class="badge bg-danger-400 badge-pill border-2 border-white"
+                              >8</span
+                            >
+                          </div>
+
+                          <div class="media-body">
+                            <div class="d-flex justify-content-between">
+                              <a href="#">Jeremy Victorino</a>
+                              <span class="font-size-sm text-muted"
+                                ><i class="icon-pencil5"></i
+                              ></span>
+                            </div>
+
+                            Pert thickly mischievous clung frowned well...
+                          </div>
+                        </li>
+
+                        <li class="media">
+                          <div class="mr-3">
+                            <span
+                              class="badge bg-danger-400 badge-pill border-2 border-white"
+                              >8</span
+                            >
+                          </div>
+
+                          <div class="media-body">
+                            <div class="d-flex justify-content-between">
+                              <a href="#">Beatrix Diaz</a>
+                              <span class="font-size-sm text-muted"
+                                ><i class="icon-pencil5"></i
+                              ></span>
+                            </div>
+
+                            Nightingale taped hello bucolic fussily cardinal...
+                          </div>
+                        </li>
+
+                        <li class="media">
+                          <div class="mr-3">
+                            <span
+                              class="badge bg-danger-400 badge-pill border-2 border-white"
+                              >8</span
+                            >
+                          </div>
+
+                          <div class="media-body">
+                            <div class="d-flex justify-content-between">
+                              <a href="#">Richard Vango</a>
+                              <span class="font-size-sm text-muted"
+                                ><i class="icon-pencil5"></i
+                              ></span>
+                            </div>
+
+                            Amidst roadrunner distantly pompously where...
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- /tabs content -->
+                </div>
+                <!-- /group -->
+              </div>
+              <div class="col-lg-4">
+                <!-- criteria -->
+                <div class="card">
+                  <div class="card-header header-elements-inline">
+                    <h6 class="card-title">Select Individual Criteria</h6>
+                    <div class="header-elements">
+                      <span
+                        ><i class="icon-history text-warning mr-2"></i> Jul 7,
+                        10:30</span
+                      >
+                    </div>
+                  </div>
+
+                  <!-- Tabs -->
+                  <ul
+                    class="nav nav-tabs nav-tabs-solid nav-justified bg-pink-400 border-x-0 border-bottom-0 border-top-pink-300 mb-0"
+                  >
+                    <li class="nav-item">
+                      <a
+                        href="#criteria"
+                        class="nav-link font-weight-semibold font-size-lg text-uppercase active"
+                        data-toggle="tab"
+                      >
+                        Criteria
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- /tabs -->
+
+                  <!-- Tabs content -->
+                  <div class="tab-content card-body">
+                    <div class="tab-pane active fade show" id="criteria">
+                      <ul class="media-list">
+                        <li class="media">
+                          <div class="media-body">
+                            <div class="d-flex justify-content-between">
+                              <a href="#">James Alexander</a>
+                              <span class="font-size-sm text-muted"
+                                >Tue 14:58</span
+                              >
+                            </div>
+
+                            The constitutionally inventoried precariously...
+                          </div>
+                        </li>
+
+                        <li class="media">
+                          <div class="media-body">
+                            <div class="d-flex justify-content-between">
+                              <a href="#">Margo Baker</a>
+                              <span class="font-size-sm text-muted"
+                                >Tue 14:58</span
+                              >
+                            </div>
+
+                            Pinched a well more moral chose goodness...
+                          </div>
+                        </li>
+
+                        <li class="media">
+                          <div class="media-body">
+                            <div class="d-flex justify-content-between">
+                              <a href="#">Jeremy Victorino</a>
+                              <span class="font-size-sm text-muted"
+                                >Tue 14:58</span
+                              >
+                            </div>
+
+                            Pert thickly mischievous clung frowned well...
+                          </div>
+                        </li>
+
+                        <li class="media">
+                          <div class="media-body">
+                            <div class="d-flex justify-content-between">
+                              <a href="#">Beatrix Diaz</a>
+                              <span class="font-size-sm text-muted"
+                                >Tue 14:58</span
+                              >
+                            </div>
+
+                            Nightingale taped hello bucolic fussily cardinal...
+                          </div>
+                        </li>
+
+                        <li class="media">
+                          <div class="media-body">
+                            <div class="d-flex justify-content-between">
+                              <a href="#">Richard Vango</a>
+                              <span class="font-size-sm text-muted"
+                                >Tue 14:58</span
+                              >
+                            </div>
+
+                            Amidst roadrunner distantly pompously where...
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- /tabs content -->
+                </div>
+                <!-- /criteria -->
+              </div>
+              <div class="col-lg-4">
+                <!-- results -->
+                <div class="card">
+                  <div class="card-header header-elements-inline">
+                    <h6 class="card-title">Setup Results</h6>
+                    <div class="header-elements">
+                      <span class="text-danger font-weight-bold">
+                        100% <i class="icon-pencil5 ml-2"></i
+                      ></span>
+                    </div>
+                  </div>
+
+                  <div class="table-responsive">
+                    <table class="table text-nowrap">
+                      <thead>
+                        <tr>
+                          <th class="w-100">Result</th>
+                          <th>From</th>
+                          <th>To</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <i
+                              class="icon-checkmark-circle text-success-400 fa-14x"
+                            ></i>
+                          </td>
+                          <td>
+                            <h6 class="font-weight-semibold mb-0">100</h6>
+                          </td>
+                          <td>
+                            <h6 class="font-weight-semibold mb-0">80</h6>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <i
+                              class="icon-checkmark-circle text-success-400 fa-14x"
+                            ></i>
+                          </td>
+                          <td>
+                            <h6 class="font-weight-semibold mb-0">100</h6>
+                          </td>
+                          <td>
+                            <h6 class="font-weight-semibold mb-0">60</h6>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <i class="icon-close2 text-danger-400 fa-14x"></i>
+                          </td>
+                          <td>
+                            <h6 class="font-weight-semibold mb-0">100</h6>
+                          </td>
+                          <td>
+                            <h6 class="font-weight-semibold mb-0">45</h6>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <i
+                              class="icon-checkmark-circle text-success-400 fa-14x"
+                            ></i>
+                          </td>
+                          <td>
+                            <h6 class="font-weight-semibold mb-0">0</h6>
+                          </td>
+                          <td>
+                            <h6 class="font-weight-semibold mb-0">90</h6>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!-- /results -->
+                <!-- individual criteria -->
+                <div class="card">
+                  <div class="table-responsive">
+                    <table class="table text-nowrap">
+                      <thead>
+                        <tr>
+                          <th class="w-100">Single Individal Criteria</th>
+                          <th>Weight</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex align-items-center">
+                              <div class="mr-3">
+                                <a
+                                  href="#"
+                                  class="btn bg-primary-400 rounded-round btn-icon btn-sm"
+                                >
+                                  <span class="letter-icon">S</span>
+                                </a>
+                              </div>
+                              <div>
+                                <a
+                                  href="#"
+                                  class="text-default font-weight-semibold letter-icon-title"
+                                  >Sigma application</a
+                                >
+                                <div class="text-muted font-size-sm">
+                                  <i
+                                    class="icon-checkmark3 font-size-sm mr-1"
+                                  ></i>
+                                  New order
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <h6 class="font-weight-semibold mb-0">80</h6>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex align-items-center">
+                              <div class="mr-3">
+                                <a
+                                  href="#"
+                                  class="btn bg-danger-400 rounded-round btn-icon btn-sm"
+                                >
+                                  <span class="letter-icon">A</span>
+                                </a>
+                              </div>
+                              <div>
+                                <a
+                                  href="#"
+                                  class="text-default font-weight-semibold letter-icon-title"
+                                  >Alpha application</a
+                                >
+                                <div class="text-muted font-size-sm">
+                                  <i
+                                    class="icon-spinner11 font-size-sm mr-1"
+                                  ></i>
+                                  Renewal
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <h6 class="font-weight-semibold mb-0">60</h6>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex align-items-center">
+                              <div class="mr-3">
+                                <a
+                                  href="#"
+                                  class="btn bg-indigo-400 rounded-round btn-icon btn-sm"
+                                >
+                                  <span class="letter-icon">D</span>
+                                </a>
+                              </div>
+                              <div>
+                                <a
+                                  href="#"
+                                  class="text-default font-weight-semibold letter-icon-title"
+                                  >Delta application</a
+                                >
+                                <div class="text-muted font-size-sm">
+                                  <i
+                                    class="icon-lifebuoy font-size-sm mr-1"
+                                  ></i>
+                                  Support
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <h6 class="font-weight-semibold mb-0">45</h6>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="d-flex align-items-center">
+                              <div class="mr-3">
+                                <a
+                                  href="#"
+                                  class="btn bg-success-400 rounded-round btn-icon btn-sm"
+                                >
+                                  <span class="letter-icon">O</span>
+                                </a>
+                              </div>
+                              <div>
+                                <a
+                                  href="#"
+                                  class="text-default font-weight-semibold letter-icon-title"
+                                  >Omega application</a
+                                >
+                                <div class="text-muted font-size-sm">
+                                  <i
+                                    class="icon-lifebuoy font-size-sm mr-1"
+                                  ></i>
+                                  Support
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <h6 class="font-weight-semibold mb-0">90</h6>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!-- /individual criteria -->
+              </div>
+            </div>
+          </div>
+
+          <!-- /dashboard content -->
+        </div>
+        <!-- /content area -->
+      </div>
+      <!-- /main content -->
+    </div>
+    <!-- /page content -->
+
+    <!-- Footer -->
+    <div class="navbar navbar-expand-lg navbar-light">
+      <div class="text-center d-lg-none w-100">
+        <button
+          type="button"
+          class="navbar-toggler dropdown-toggle"
+          data-toggle="collapse"
+          data-target="#navbar-footer"
+        >
+          <i class="icon-unfold mr-2"></i>
+          Footer
+        </button>
+      </div>
+
+      <div class="navbar-collapse collapse" id="navbar-footer">
+        <span class="navbar-text">
+          &copy; 2020. <a href="https://vspeech.ai/">Vspeech.ai</a>
+        </span>
+
+        <ul class="navbar-nav ml-lg-auto">
+          <li class="nav-item">
+            <a href="#" class="navbar-nav-link" target="_blank"
+              ><i class="icon-lifebuoy mr-2"></i> Support</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- /footer -->
+
+    <!-- Comment Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Create Campaign</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="#">
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label">Compaign name</label>
+                <div class="col-lg-9">
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label">Type </label>
+                <div class="col-lg-9">
+                  <select
+                    name="select"
+                    class="form-control form-control-select2"
+                  >
+                    <option value="opt1">Basic select</option>
+                    <option value="opt2">Option 2</option>
+                    <option value="opt3">Option 3</option>
+                    <option value="opt4">Option 4</option>
+                    <option value="opt5">Option 5</option>
+                    <option value="opt6">Option 6</option>
+                    <option value="opt7">Option 7</option>
+                    <option value="opt8">Option 8</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label">Status </label>
+                <div class="col-lg-9">
+                  <select
+                    name="select"
+                    class="form-control form-control-select2"
+                  >
+                    <option value="opt1">Running</option>
+                    <option value="opt2">Ended</option>
+                    <option value="opt3">Planned</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label">Message </label>
+                <div class="col-lg-9">
+                  <textarea
+                    rows="5"
+                    cols="5"
+                    class="form-control"
+                    placeholder="Default textarea"
+                  ></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Comment Modal -->
+  </body>
+</html>
