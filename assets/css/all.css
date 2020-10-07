@@ -198,6 +198,9 @@ h5.analytics-title {
   display: flex;
   justify-content: space-between;
 }
+.img-responsive {
+  max-width: 100%;
+}
 @media (min-width: 768px) and (max-width: 1199.98px) {
   .tab-hide {
     display: none;
@@ -243,5 +246,23 @@ h5.analytics-title {
   }
   .card-title {
     padding-bottom: 10px;
+  }
+  .transcript-flexbox,
+  .speaker-box {
+    flex-direction: column;
+  }
+  .speaker-box {
+    margin: 1.5rem 0 0;
+  }
+  .arrow-left:after {
+    bottom: 100%;
+    left: 50%;
+    top: auto;
+    border-color: rgba(136, 183, 213, 0);
+    border-bottom-color: #2196f3;
+    margin-left: -10px;
+  }
+  .my-custom-scrollbar-primary {
+    margin-bottom: 3rem;
   }
 }
