@@ -194,6 +194,10 @@ h5.analytics-title {
 .font-size-2 {
   font-size: 2.4rem;
 }
+.d-flex-new {
+  display: flex;
+  justify-content: space-between;
+}
 @media (min-width: 768px) and (max-width: 1199.98px) {
   .tab-hide {
     display: none;
