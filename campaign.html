@@ -53,8 +53,12 @@
     <!-- /core JS files -->
 
     <!-- Theme JS files -->
+    <script src="assets/js/plugins/ui/moment/moment.min.js"></script>
+    <script src="assets/js/plugins/pickers/daterangepicker.js"></script>
+
     <script src="assets/js/plugins/forms/selects/select2.min.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/demo_pages/dashboard.js"></script>
     <script src="assets/js/demo_pages/sidebar_components.js"></script>
     <!-- /theme JS files -->
   </head>
@@ -548,14 +552,18 @@
               </div>
 
               <div class="form-group row">
-                <label class="col-lg-3 col-form-label">Message </label>
+                <label for="message-text" class="col-lg-3 col-form-label"
+                  >Start & End Date</label
+                >
                 <div class="col-lg-9">
-                  <textarea
-                    rows="5"
-                    cols="5"
-                    class="form-control"
-                    placeholder="Default textarea"
-                  ></textarea>
+                  <div class="form-control">
+                    <a
+                      class="text-default daterange-ranges font-weight-semibold cursor-pointer dropdown-toggle"
+                    >
+                      <i class="icon-calendar3 mr-2"></i>
+                      <span></span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </form>

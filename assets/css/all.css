@@ -184,6 +184,13 @@ h5.analytics-title {
   padding: 1.25rem;
   flex: 1 1 auto;
 }
+.pagination-wrap {
+  margin: auto;
+  padding: 15px 15px 30px;
+}
+.pagination li a {
+  cursor: pointer;
+}
 @media (min-width: 768px) and (max-width: 1199.98px) {
   .tab-hide {
     display: none;
