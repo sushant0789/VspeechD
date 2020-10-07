@@ -287,7 +287,229 @@
         <div class="content">
           <!-- Dashboard content -->
 
-          <div class="card"></div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-header header-elements-inline">
+                  <div class="header-elements">
+                    <h4 class="card-title font-weight-semibold">
+                      Search Metadata
+                    </h4>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <form action="#">
+                    <div class="form-group row">
+                      <div class="col-lg-6">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Customer"
+                        />
+                      </div>
+                      <div class="col-lg-6">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Agent"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="col-lg-6">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Call ID"
+                        />
+                      </div>
+                      <div class="col-lg-6">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Group "
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="col-lg-6">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Problem"
+                        />
+                      </div>
+                      <div class="col-lg-6">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Product"
+                        />
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                      Search
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-header header-elements-inline">
+                  <div class="header-elements">
+                    <h4 class="card-title font-weight-semibold">
+                      Search Transcripts
+                    </h4>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <form action="#">
+                    <div class="form-group row">
+                      <div class="col-lg-3 text-center">
+                        <i class="icon-user-tie font-size-2"></i>
+                        <h5 class="font-weight-semibold">Agent</h5>
+                      </div>
+                      <div class="col-lg-7">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Agent"
+                        />
+                      </div>
+                      <div class="col-lg-2">
+                        <button type="submit" class="btn btn-primary">
+                          Search
+                        </button>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="col-lg-3 text-center">
+                        <i class="icon-users4 font-size-2"></i>
+                        <h5 class="font-weight-semibold">Customer</h5>
+                      </div>
+                      <div class="col-lg-9">
+                        <ul class="media-list font-size-lg">
+                          <li>
+                            Calls Searched :
+                            <span class="font-weight-semibold"> 600</span>
+                          </li>
+                          <li>
+                            Calls Matched :
+                            <span class="font-weight-semibold"> 30</span>
+                          </li>
+                          <li>
+                            Match Rate :
+                            <span class="font-weight-semibold"> 75%</span>
+                          </li>
+                          <li>
+                            Calls Returned :
+                            <span class="font-weight-semibold"> 0</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header header-elements-inline">
+              <h5 class="card-title">Search Results</h5>
+            </div>
+
+            <div class="card-body">
+              <p class="mb-3">
+                Sidebar - vertical area that displays onscreen and presents
+                widget components and website navigation menu in a text-based
+                hierarchical form. All sidebars are css-driven - just add one of
+                css classes to the <code>body</code> tag and/or
+                <code>.sidebar</code> container, and sidebar will change its
+                width and color. No js, css only. Although sidebar type is based
+                on css, buttons do their job with JS - they switch necessary
+                classes in <code>&lt;body></code> tag. Below you'll find
+                summarized tables with all available <code>button</code> and
+                <code>sidebar</code> container classes. By default, the template
+                includes 6 different sidebar types and combinations:
+              </p>
+
+              <div class="mb-3">
+                <h6 class="font-weight-semibold">1. Default sidebar</h6>
+                <p>
+                  Default template sidebar has <code>270px</code> (~16.88rem)
+                  width, aligned to the left (to the right in RTL version) and
+                  has dark blue background color. All navigation levels are
+                  based on accordion <strong>or</strong> collapsible
+                  functionality, open on click. Supports 2 versions: static and
+                  fixed. Fixed version can be used with native or custom
+                  scrollbars.
+                </p>
+              </div>
+
+              <div class="mb-3">
+                <h6 class="font-weight-semibold">2. Mini sidebar</h6>
+                <p>
+                  Mini sidebar has <code>56px</code> width, which is calculated
+                  dynamically. No text in parent level of menu items, aligned to
+                  the left (to the right in RTL version) and has dark blue
+                  background color. Second navigation level opens on parent
+                  level hover, absolute positioned, other children levels are
+                  based on accordion or collapsible functionality, open on
+                  click. It is <strong>required</strong> to add
+                  <code>.sidebar-xs</code> class to the
+                  <code>&lt;body></code> tag. This class is responsible for
+                  sidebar width and main navigation. By default all components
+                  except main navigation are hidden in mini sidebar. Can be used
+                  with main sidebar only.
+                </p>
+              </div>
+
+              <div class="mb-3">
+                <h6 class="font-weight-semibold">3. Secondary sidebar</h6>
+                <p>
+                  Main sidebar has <code>270px</code> width or
+                  <code>56px</code> (if <code>.sidebar-xs</code> class added).
+                  Secondary sidebar has fixed width of <code>270px</code>, which
+                  is similar to default and right sidebars, so different sidebar
+                  components can be placed to all sidebar types. Main and
+                  secondary sidebars can contain any content - menu, navigation,
+                  buttons, lists, tabs etc. Only main sidebar is collapsible.
+                </p>
+              </div>
+
+              <div class="mb-3">
+                <h6 class="font-weight-semibold">4. Right sidebar</h6>
+                <p>
+                  Right sidebar includes additional sidebar displayed on the
+                  right (left in RTL direction) side. It has a static position,
+                  appears as an additional component with 100% height and pushes
+                  content left/right. There are 2 different ways of displaying
+                  alternative sidebar: first - when it collapses main sidebar
+                  from default to mini width and second - when it hides the main
+                  sidebar. For these actions are responsible 2 different buttons
+                  -
+                  <code>.sidebar-right-main-toggle</code> and
+                  <code>.sidebar-right-main-hide</code>.
+                </p>
+              </div>
+
+              <div class="mb-3">
+                <h6 class="font-weight-semibold">
+                  5. Right/Secondary sidebars
+                </h6>
+                <p>
+                  Secondary and Right sidebars can be used together, so
+                  basically it is a 4 column layout. When right sidebar is
+                  shown, additional options are available: hide main sidebar,
+                  hide secondary sidebar or collapse main sidebar width. Since
+                  right sidebar is hidden by default, you can display all 4
+                  sidebars at once by manipulating classes. Options are
+                  accessible via proper button and/or body classes.
+                </p>
+              </div>
+            </div>
+          </div>
 
           <!-- /dashboard content -->
         </div>
